@@ -1,0 +1,46 @@
+- Can we be an aggregator? Can we get customers and then just call COSEC as Trium and they believe it is us? Must we create each user on Trium as we onboard them?
+- Does every user have to registered on COSEC. 
+- Can users that sign up on us go to the web portal on COSEC and sign in?
+- We may need a customer to Infoware ID mapping.
+- Authentication and authorization feature:
+--- Stages of registration.
+--- Roles and permission for user under a bank
+--- Bank Super Admin view.
+--- Trium Admin view.
+- Give an aggregator a client access token. Clients can never do a trade.
+- Users under the client should have a user access token.
+
+- Register as a user
+- Forgot password
+- Login
+- Upload documents later
+
+- Utility services are available? Please confirm. Do we have it or need to build it. Is there an email service?
+
+Sprint 0
+=========
+- Setup Confluence Documentation
+- Setup BitBucket repos for each product
+- Create JIRA boards for each major feature
+- Create project backlog
+- Create EPICs and User stories
+- API documentation and process flow
+- CI Setup
+
+
+
+Oise
+====
+/register
+- BusinessName
+- BusinessEmail
+- Password
+- Confirm Password (front End)
+- Business Type (configure a list of static business
+
+Successful and failure message
+
+
+API Gateway Console
+====================
+- As a 
