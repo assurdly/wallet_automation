@@ -9,7 +9,7 @@ import pages.SignUpPage;
 
 public class SignUpTest extends BasePage{
 
-    SignUpPage hello = new SignUpPage(WebDriver driver);
+
     @Test
     public void userSignUp() throws InterruptedException {
         loginPage.clickSignUpButton();
@@ -24,7 +24,7 @@ public class SignUpTest extends BasePage{
 
 
 
-}
+
 
 
 
