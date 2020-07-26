@@ -9,12 +9,21 @@ public class userTestData {
     {
         Object[][] userData = new Object[1][2];
         //Valid Business user credentials
-        //userData[0][0] = "wallet-dev@assurdly.com"; userData[0][1] = "Password12$";
+        userData[0][0] = "wallet-dev@assurdly.com"; userData[0][1] = "Password12$";
         //Valid User credentials
-        userData[0][0] = "wallet-sub@assurdly.com"; userData[0][1] = "6wqpjmz3cgxzxupxmu1o";
+        //userData[0][0] = "wallet-sub@assurdly.com"; userData[0][1] = "6wqpjmz3cgxzxupxmu1o";
 
         return userData;
     }
+    @DataProvider
+    public static Object[][] signUpData()
+    {
+        Object[][] userData = new Object[1][2];
+        //Valid user credentials
+        userData[0][0] = "amarachi@mailinator.com"; userData[0][1] = "Password123@";
+        return userData;
+    }
+
 
     @DataProvider
     public static Object[][] subWalletData()
