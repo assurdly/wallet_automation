@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage {
     private WebDriver driver;
+    private By sign_up = By.xpath("//ul[@class='nav d-none d-md-flex']//a[@class='btn btn-primary'][contains(text(),'Sign Up')]");
     private By email_field = By.xpath("//input[@formcontrolname = 'email']");
     private By password_field = By.xpath("//input[@formcontrolname = 'password']");
     private By sign_in = By.xpath("//div[@class='login-form']//button[text()='Sign In']");
@@ -32,6 +33,14 @@ public class LoginPage {
         driver.findElement(sign_in).click();
         Thread.sleep(5000);
         return new DashboardPage(driver);
+    }
+    //Click on Sign Up Button
+    public void clickSignUpButton() throws InterruptedException
+    {
+        driver.findElement(sign_up).click();
+        Thread.sleep(5000);
+
+
     }
 
     //Confirm user is in Sign in page

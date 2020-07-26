@@ -7,12 +7,14 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import pages.LoginPage;
+import pages.SignUpPage;
 
 import java.util.concurrent.TimeUnit;
 
 public class BasePage {
     private static WebDriver driver;
     public static LoginPage loginPage;
+    private static SignUpPage signUpPage;
     String chromePath = "src/main/resources/chromedriver.exe";
     String firefoxPath = "src/main/resources/geckodriver.exe";
     String url ="https://devbusiness.wallets.africa/login";
@@ -49,7 +51,9 @@ public class BasePage {
     public static void pageHandler()
     {
         loginPage = new LoginPage(driver);
+        signUpPage = new SignUpPage(driver);
     }
+
 
     @AfterSuite
     public void tearDown()
