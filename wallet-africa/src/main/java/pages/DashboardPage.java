@@ -50,12 +50,17 @@ public class DashboardPage {
     private By verificationMessage = By.cssSelector(".success>small");
     private By copyCryptoBtn = By.cssSelector(".form-group:nth-child(2)>button");
     private By closeBtn = By.cssSelector(".form-group:nth-child(1)>button");
+    private By plusSign = By.xpath("//img[@class='fundimg']");
 
 
 
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public DashboardPage() {
+
     }
 
     //Confirm the dashboard URL
@@ -65,6 +70,12 @@ public class DashboardPage {
         wait.until(ExpectedConditions.urlToBe("https://devbusiness.wallets.africa/dashboard"));
         Thread.sleep(5000);
         return driver.getCurrentUrl();
+    }
+
+    //Fund wallet
+    public void clickPlusSign() throws InterruptedException {
+        driver.findElement(plusSign).click();
+        Thread.sleep(5000);
     }
 
     //View should contain user balance

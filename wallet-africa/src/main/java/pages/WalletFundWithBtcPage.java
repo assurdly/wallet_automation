@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class WalletFundWithBtcPage {
+
     private WebDriver driver;
     private By plusSign = By.xpath("//img[@class='fundimg']");
     private By fundWithBtcButton = By.xpath("//button[contains(text(),'Bitcoin')]");
@@ -12,10 +13,7 @@ public class WalletFundWithBtcPage {
 
 
 
-    public void clickPlusSign() throws InterruptedException {
-        driver.findElement(plusSign).click();
-        Thread.sleep(5000);
-    }
+
     public void clickBtcBtn ()  {
         driver.findElement(fundWithBtcButton).click();
 
